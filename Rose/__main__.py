@@ -68,9 +68,9 @@ async def start_bot():
     print("""
  _____________________________________________   
 |                                             |  
-|          Deployed Successfully              |  
-|         (C) 2021-2022 by @szteambots        | 
-|          Greetings from supun  :)           |
+|          Deploy Olundu              |  
+|         (C) 2021-2022 by @CguesMasterResmi        | 
+|          Bəxdəvər  :)           |
 |_____________________________________________|  
                                                                                                
     """)
