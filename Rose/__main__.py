@@ -93,25 +93,25 @@ home_keyboard_pm = InlineKeyboardMarkup(
         ],
         [
            InlineKeyboardButton(
-                text=" ℹ️ About", callback_data="_about"
+                text=" ℹ️ Haqqında", callback_data="_about"
             ),
             InlineKeyboardButton(
-                text="🌍 languages ", callback_data="_langs"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="📮 How To Use Me", callback_data="bot_commands"
+                text="🇦🇿 dil ", callback_data="_langs"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🌐 My Website",
-                url=f"https://szrosebot.ml",
+                text="📮 Məni Necə İşlədmək Olar ❓", callback_data="bot_commands"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🚀 Mənim Blogum",
+                url=f"https://t.me/VusalinBlogu",
             ),
             InlineKeyboardButton(
-                text="🔰News Channel",
-                url=f"https://t.me/szroseupdates",
+                text="🔰Rəsmi Kanal",
+                url=f"https://t.me/cguesmasterresmi",
             )
         ],
     ]
@@ -121,7 +121,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="📚 Commands & help",
+                text="Əmrlər və kömək 📕",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             )
         ]
@@ -171,7 +171,7 @@ async def start(client, message: Message, _):
                 disable_web_page_preview=True,
             )
         elif name == "connections":
-            await message.reply("Run /connections to view or disconnect from groups!")
+            await message.reply("Run /connections qruplara baxmaq və ya onlarla əlaqəni kəsmək üçün!")
     else:
         served_chats = len(await get_served_chats())
         served_chats = []
@@ -184,13 +184,13 @@ async def start(client, message: Message, _):
         for user in users:
           served_users.append(int(user["bot_users"]))
         await message.reply(f"""
-[👋]({random.choice(IMG)}) Hey there {message.from_user.mention}, 
+[👋🏻]({random.choice(IMG)}) Salam.⚡ {message.from_user.mention}, 
 
-   My name is Rose, an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs. 
+   Mənim Adım Enerji Security Bot ⚡, Bütün Qrup Kanalları Qorumaq Üçün Kodlaşdırılmış Botam. 
 I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
 
-⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+⚒ Mənə /help yazaraq komandoları, əldə edə bilərsən. 
+👨🏻‍💻 Proglamlaşdıran : @Vusaliw
 """,
             reply_markup=home_keyboard_pm,
         )
@@ -275,14 +275,14 @@ async def startcq(client,CallbackQuery, _):
         served_users.append(int(user["bot_users"]))
     await CallbackQuery.message.edit(
             text=f"""
-👋 Hey there {CallbackQuery.from_user.mention}, 
+👋🏻 Salam.⚡ {CallbackQuery.from_user.mention}, 
 
-   My name is Rose ,an  advanced telegram Group management Bot For help 
-You Protect Your Groups & Suit For All Your Needs. 
+   Mənim Adım Energy Security.⚡, Mən Qrup Kanalları Qorumaq Üçün Kodlaşdırlmış Botam
+Bot Python & Telethon İlə @Vusaliw Tərəfindən Hazırlanmışdır. 
 I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
 
- ⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+ ⚒ Mənə /help yazaraq komandoları, əldə edə bilərsən 
+👨🏻‍💻 Programlaşdıran : @vusaliw
 """,
             disable_web_page_preview=True,
             reply_markup=home_keyboard_pm)
@@ -293,12 +293,12 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
 """
-**Welcome to help menu**
-I'm a group management bot with some useful features.
-You can choose an option below, by clicking a button.
-If you have any bugs or questions on how to use me, 
-have a look at my [Docs](https://szsupunma.gitbook.io/rose-bot/), or head to @szteambots.
-**All commands can be used with the following: / **""",
+** Kömək Menyusuna Xoş Gəlmisiniz.⚜️**
+Mən bəzi faydalı xüsusiyyətləri olan qrup idarəetmə botuyam.
+Düyməni klikləməklə aşağıdakı variantı seçə bilərsiniz.
+Məndən necə istifadə edəcəyinizlə bağlı hər hansı bir səhviniz və ya sualınız varsa, 
+@VendettaChatAz Gələrək Bildirə Bilərsiniz.
+**Bütün əmrlər aşağıdakılarla istifadə edilə bilər: / **""",
         keyboard,
     )
 
@@ -306,7 +306,7 @@ have a look at my [Docs](https://szsupunma.gitbook.io/rose-bot/), or head to @sz
 async def ads_message(_, message):
 	await app.forward_messages(
 		chat_id = message.chat.id, 
-		from_chat_id = int(-1001356358215), 
+		from_chat_id = int(-1001533468746), 
 		message_ids = 2255,
 	)
 
@@ -336,10 +336,10 @@ async def help_button(client, query, _):
         module = (mod_match.group(1)).replace(" ", "_")
         text = (
             "{} **{}**:\n".format(
-                "Here is the help for", HELPABLE[module].__MODULE__
+                "Repo Yoxduuu))", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
-            + "\n👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma"
+            + "\n🧑🏻‍💻 Proglamlaşdıran : @vusaliw"
         )
         if hasattr(HELPABLE[module], "__helpbtns__"):
                        button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
