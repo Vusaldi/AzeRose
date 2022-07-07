@@ -8,27 +8,27 @@ fbuttons = InlineKeyboardMarkup(
         [
         [
             InlineKeyboardButton(
-                text="👥Support Group", url="https://t.me/szrosesupport"
+                text="Vendetta Chat 🇦🇿", url="https://t.me/vendettachataz"
             ),
             InlineKeyboardButton(
-                text="👤News Channel", url="https://t.me/Theszrosebot"
+                text="👤Rəsmi Kanal", url="https://t.me/cguesmasterresmi"
             )
         ], 
         [
             InlineKeyboardButton(
-                text="⚒ Source Code", url="https://github.com/szsupunma/sz-rosebot"
+                text="⚒ TTK Fban", url="https://t.me/TTK_Fban"
             ),
             InlineKeyboardButton(
-                text="📓 Documentation", url="https://szsupunma.gitbook.io/rose-bot"
+                text="📓 TTK Rəsmi", url="https://t.me/TTK_resmi"
             )
         ], 
         [
             InlineKeyboardButton(
-                text="🖥 How To Deploy Me", url="https://szsupunma.gitbook.io/rose-bot"
+                text="🖥 Developer", url="https://t.me/Vusallldi"
             )
         ], 
         [
-            InlineKeyboardButton("« Back", callback_data='startcq')
+            InlineKeyboardButton("« Geri", callback_data='startcq')
         ]
         ]
 )
