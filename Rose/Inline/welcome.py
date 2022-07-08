@@ -3,23 +3,23 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
 texts = """
-Here is the help for Welcome:
+Xoş Gəldin Mesajı Qarşılama:
 
-Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!
+Üzvlərinizə salamlama modulu ilə xoş qarşılayın!  Ya da kədərli bir vida... Asılıdır!
 
 Admin commands:
-- /welcome : Enable/disable welcomes messages.
-- /goodbye : Enable/disable goodbye messages.
-- /setwelcome : Set a new welcome message. Supports markdown, buttons, and fillings.
-- /resetwelcome: Reset the welcome message.
-- /setgoodbye : Set a new goodbye message. Supports markdown, buttons, and fillings.
-- /resetgoodbye: Reset the goodbye message.
-- /cleanservice : Delete all service messages. Those are the annoying 'x joined the group' notifications you see when people join.
-- /cleanwelcome : Delete old welcome messages. When a new person joins, or after 5 minutes, the previous message will get deleted.
+- /welcome : Xoş qarşılama mesajlarını aktivləşdirin/deaktiv edin.
+- /goodbye : Vida mesajlarını aktivləşdirin/deaktiv edin.
+- /setwelcome : Yeni salamlama mesajı təyin edin.  İşarələmə, düymələr və doldurmaları dəstəkləyir.
+- /resetwelcome: Xoş gəlmisiniz mesajını sıfırlayın.
+- /setgoodbye : Yeni vida mesajı təyin edin.  İşarələmə, düymələr və doldurmaları dəstəkləyir.
+- /resetgoodbye: Vida mesajını sıfırlayın.
+- /cleanservice : Bütün xidmət mesajlarını silin.  İnsanlar qoşulduqda gördüyünüz zəhlətökən "x qrupa qoşuldu" bildirişləridir.
+- /cleanwelcome : Köhnə salamlama mesajlarını silin.  Yeni şəxs qoşulduqda və ya 5 dəqiqədən sonra əvvəlki mesaj silinəcək.
 
-Examples:
-- Get the welcome message without any formatting
--> /welcome noformat
+Məsələn:
+- Heç bir formatlaşdırmadan salamlama mesajını alın
+-> /welcome XoşGəldiniz 🎉
 """
 
 fbuttonss = InlineKeyboardMarkup(
@@ -42,12 +42,12 @@ async def commands_callbacc(_, CallbackQuery):
     await CallbackQuery.message.delete()
 
 tetz = """
-Rose which will ask new Group Members to verify them by solving an emoji | number captcha.
+Yeni Qrup Üzvlərindən emoji həll edərək onları təsdiqləmələrini xahiş edəcək Rose sayı captcha.
 
-- /captcha - turn on captcha : There are two types of captcha
-- /remove - turn off captcha
+- /captcha - captcha-nı yandırın: İki növ captcha var
+- /remove - captcha-nı söndürün
 
-for more help ask in my support group
+daha çox kömək üçün dəstək qrupumdan soruşun.🧑🏻‍💻
 """
 @app.on_callback_query(filters.regex("_filling"))
 async def commands_callbacc(_, CallbackQuery):
@@ -61,6 +61,6 @@ async def commands_callbacc(_, CallbackQuery):
 
 close = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('« Back', callback_data='_mdowns')
+            InlineKeyboardButton('« Geri', callback_data='_mdowns')
         ]], 
 )
