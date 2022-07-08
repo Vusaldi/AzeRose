@@ -20,7 +20,7 @@ Aşağıdakılardan birindən simvol olan mesajları avtomatik olaraq silin
 - /antisinhala `[on | off]` -  dil dəyişmə
 - /antitamil `[on | off]` -  dil dəyişmə 
 
-**Note** : Əgər admin hər hansı funksiya işləyərkən bu dildə hər hansı simvolu göndərirsə
+**Məsələn** : Əgər admin hər hansı funksiya işləyərkən bu dildə hər hansı simvolu göndərirsə
            silər və istifadəçi 3 xəbərdarlıq göndərir və sonra ona qadağa qoyur    
 """
 
