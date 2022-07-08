@@ -69,7 +69,7 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |          Deploy Olundu              |  
-|         (C) 2021-2022 by @CguesMasterResmi        | 
+|         (C) 2021-2022 by @EnergyBotlarım        | 
 |          Bəxdəvər  :)           |
 |_____________________________________________|  
                                                                                                
