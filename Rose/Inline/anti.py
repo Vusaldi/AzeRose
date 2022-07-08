@@ -3,25 +3,25 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
 supunm = """
-Delete messages containing characters from one of the following automatically
-- Arabic Language
-- Chinese Language
-- Japanese Language (Includes Hiragana, Kanji and Katakana)
-- Sinhala Language
+Aşağıdakılardan birindən simvol olan mesajları avtomatik olaraq silin
+- Ərəb Dili
+- Çin Dili
+- Japon Dili (Includes Hiragana, Kanji and Katakana)
+- İngilis Dili
 - Tamil Language
 - Cyrillic Language
 
-**Admin Commands:**
+**✅Admin Əmrləri**
 
-- /antiarabic `[on | off]` -  anti-arab function
-- /antichinese `[on | off] `-  anti-chinese function
-- /antijapanese `[on | off]` -  anti-japanese function
-- /antirussian `[on | off]` -  anti-russian function
-- /antisinhala `[on | off]` -  anti-sinhala function
-- /antitamil `[on | off]` -  anti-tamil function
+- /antiarabic `[on | off]` -  dil dəyişmə
+- /antichinese `[on | off] `-  dil dəyişmə
+- /antijapanese `[on | off]` -  dil dəyişmə
+- /antirussian `[on | off]` -  dil dəyişmə
+- /antisinhala `[on | off]` -  dil dəyişmə
+- /antitamil `[on | off]` -  dil dəyişmə 
 
-**Note** : If admin send any containing characters in this lang when on  any function
-           it will delete and user send 3 warn and after ban him    
+**Note** : Əgər admin hər hansı funksiya işləyərkən bu dildə hər hansı simvolu göndərirsə
+           silər və istifadəçi 3 xəbərdarlıq göndərir və sonra ona qadağa qoyur    
 """
 
 @app.on_callback_query(filters.regex("_anl"))
@@ -36,11 +36,10 @@ async def commands_callbacc(_, CallbackQuery):
 
 
 supunmascv = """
-I Can Remove Service Message In Groups 
-Like Users Join Messages, Leave Messages, Pinned Allert Messages, 
-Voice Chat Invite Members Allerts ETC..
-
-- /antiservice [enable|disable]
+Quruplarınız Üçün Qoruma Bot'uyam.🚀 
+Fed,Açmaq | Falan Hamısı Məndə Var.⚜️
+Səsli Söhbətə Adam Çağıra Bilərəm...🇦🇿
+- /antiservice [açmaq|qapadmaq]
 """
 @app.on_callback_query(filters.regex("_anss"))
 async def commands_callbacc(_, CallbackQuery):
