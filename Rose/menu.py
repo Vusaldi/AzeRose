@@ -8,18 +8,18 @@ fbuttons = InlineKeyboardMarkup(
         [
         [
             InlineKeyboardButton(
-                text="Vendetta Chat 🇦🇿", url="https://t.me/vendettachataz"
+                text="𝗘𝗻𝗲𝗿𝗴𝘆 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ⚡", url="https://t.me/energybotlarimsupport"
             ),
             InlineKeyboardButton(
-                text="👤Rəsmi Kanal", url="https://t.me/cguesmasterresmi"
+                text="👤Rəsmi Kanal", url="https://t.me/energybots"
             )
         ], 
         [
             InlineKeyboardButton(
-                text="⚒ TTK Fban", url="https://t.me/TTK_Fban"
+                text="⚒ Köməkçi", url="https://t.me/@MR_KABUS_133"
             ),
             InlineKeyboardButton(
-                text="📓 TTK Rəsmi", url="https://t.me/TTK_resmi"
+                text="💬 Chat", url="https://t.me/https://t.me/EnergySohbet"
             )
         ], 
         [
@@ -76,7 +76,7 @@ keyboard =InlineKeyboardMarkup(
             ), 
         ], 
         [  
-            InlineKeyboardButton("« Back", callback_data='startcq')
+            InlineKeyboardButton("« Geri", callback_data='startcq')
         ]
     ]
 )
