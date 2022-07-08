@@ -111,7 +111,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="🔰Rəsmi Kanal",
-                url=f"https://t.me/cguesmasterresmi",
+                url=f"https://t.me/energybots",
             )
         ],
     ]
@@ -187,7 +187,7 @@ async def start(client, message: Message, _):
 [👋🏻]({random.choice(IMG)}) Salam.⚡ {message.from_user.mention}, 
 
    Mənim Adım Enerji Security Bot ⚡, Bütün Qrup Kanalları Qorumaq Üçün Kodlaşdırılmış Botam. 
-I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
+Qrupa Əlavə Edərək Kef Edin! `{len(served_chats)}` Bot'u 0 Dan Yazıb Proglamlaşdıran 🧑🏻‍💻 @Vusallldi Øwner 🧑🏻‍💻 @MR_KABUS_133  `{len(served_users)}` 
 
 ⚒ Mənə /help yazaraq komandoları, əldə edə bilərsən. 
 👨🏻‍💻 Proglamlaşdıran : @Vusaliw
@@ -279,7 +279,7 @@ async def startcq(client,CallbackQuery, _):
 
    Mənim Adım Energy Security.⚡, Mən Qrup Kanalları Qorumaq Üçün Kodlaşdırlmış Botam
 Bot Python & Telethon İlə @Vusaliw Tərəfindən Hazırlanmışdır. 
-I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
+Hmm :)) `{len(served_chats)}` @EnergyBotlar `{len(served_users)}` users
 
  ⚒ Mənə /help yazaraq komandoları, əldə edə bilərsən 
 👨🏻‍💻 Programlaşdıran : @vusaliw
