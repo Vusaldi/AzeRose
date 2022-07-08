@@ -27,28 +27,28 @@ async def get_private_rules(_, m: Message, help_option: str):
 async def get_learn(_, m: Message, help_option: str):
     await m.reply_text(
         f"""
-the other way to use me is to write the inline query by your self
-the format should be in this arrangement
+məndən istifadə etməyin başqa yolu daxili sorğunu özünüz yazmaqdır
+ format bu tənzimləmədə olmalıdır
 
-`@szrosebot your whisper @username`
+`@EnergySecurityBot your whisper @username`
 
-now I'll split out the format in 3 parts and explain every part of it
+indi formatı 3 hissəyə bölüb hər bir hissəsini izah edəcəyəm
 
-1- `@szrosebot`
-this is my username it should be at the beginning of the inline query so I'll know that you are using me and not another bot.
+1- `@EnergySecurityBot`
+bu mənim istifadəçi adımdır, daxili sorğunun əvvəlində olmalıdır, ona görə də biləcəyəm ki, başqa botdan deyil, məndən istifadə edirsiniz.
 
-2- `whisper message`
+2- `gizli mesak`
 it is the whisper that will be sent to the target user, you need to remove your whisper and insert your actual whisper.
 
 3- `@username`
 you should replace this with target's username so the bot will know that the user with this username can see your whisper message.
 
 example:- 
-`@szrosebot hello this is a test @supunma`
+`@EnergySecurityBot hello this is a test @vusallldi`
 
-📎 the bot works in groups and the target user should be in the same group with you
-what you are waiting for?!
-try me now 😉
+📎 bot qruplarda işləyir və hədəf istifadəçi sizinlə eyni qrupda olmalıdır
+ nəyi gözləyirsən?!
+ indi məni sınayın 😉
 """,
         quote=True,
         disable_web_page_preview=True,
